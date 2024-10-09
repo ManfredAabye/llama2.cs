@@ -1,33 +1,30 @@
-# Andrej Karpathy's llama2.c in one file of pure C#.
-[llama2.c](https://github.com/karpathy/llama2.c) is a very simple implementation
-to run inference of models with a [Llama2](https://arxiv.org/pdf/2302.13971.pdf)-like transformer-based LLM architecture.  
+# Andrej Karpathys llama2.c in einer einzigen Datei aus purem C#.
+[llama2.c](https://github.com/karpathy/llama2.c) ist eine sehr einfache Implementierung, um die Inferenz von Modellen mit einer auf [Llama2](https://arxiv.org/pdf/2302.13971.pdf) basierenden Transformer-LLM-Architektur durchzuführen.
 
-This is a pure C# implementation of the same thing. It is optimized for speed and very simple to understand and modify.
+Dies ist eine reine C#-Implementierung derselben Funktionalität. Sie ist für Geschwindigkeit optimiert und sehr einfach zu verstehen und anzupassen.
 
+## Nutzung
 
-## Usage
+Benötigt .net7 oder höher.
 
-Requires .net7 or higher.
-
-1. First put the stories15M.bin file in the same directory as the executable. You can download it from [here](https://huggingface.co/karpathy/tinyllamas/resolve/main/stories15M.bin)
-2. Get tokenizer from [here](https://github.com/karpathy/llama2.c/blob/master/tokenizer.bin) and put it in the same directory as the executable.
+1. Zuerst die Datei stories15M.bin im gleichen Verzeichnis wie die ausführbare Datei ablegen. Du kannst sie [hier](https://huggingface.co/karpathy/tinyllamas/resolve/main/stories15M.bin) herunterladen.
+2. Lade den Tokenizer von [hier](https://github.com/karpathy/llama2.c/blob/master/tokenizer.bin) und lege ihn ebenfalls in das gleiche Verzeichnis wie die ausführbare Datei.
 ```
 dotnet build -c Release
 ```
 
-### Generate a random story
+### Eine zufällige Geschichte generieren
 ```
 .\bin\Release\net7.0\llama2.cs.exe stories15M.bin
 ```
 ![WindowsTerminal_LrRTW3joph](https://github.com/trrahul/llama2.cs/assets/7353840/3b469a99-b83a-43f1-b07d-227da7b9ebe0)
 
-
-### Generate a random story with a given prompt
+### Eine zufällige Geschichte mit einem bestimmten Prompt generieren
 ```
-.\bin\Release\net7.0\llama2.cs.exe stories15M.bin  -i "A long time ago a"
+.\bin\Release\net7.0\llama2.cs.exe stories15M.bin  -i "Vor langer Zeit"
 ```
 
 ### TODO
- - [ ] Inference with Llama2 checkpoints
- - [ ] Use high performance C# types from .net8?
- - [ ] Add training functionality
+- [ ] Inferenz mit Llama2-Checkpoints
+- [ ] Verwendung von leistungsstarken C#-Typen aus .net8?
+- [ ] Trainingsfunktionalität hinzufügen
