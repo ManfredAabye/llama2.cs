@@ -3,6 +3,8 @@
 
 Dies ist eine reine C#-Implementierung derselben Funktionalität. Sie ist für Geschwindigkeit optimiert und sehr einfach zu verstehen und anzupassen.
 
+Für OpenSim muss über NuGet "System.Numerics.Tensors" nachinstalliert werden und DotNet auf .net8 gesetzt werden.
+
 ## Nutzung
 
 Benötigt .net7 oder höher.
