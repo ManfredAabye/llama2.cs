@@ -30,3 +30,4 @@ dotnet build -c Release
 - [ ] Inferenz mit Llama2-Checkpoints
 - [ ] Verwendung von leistungsstarken C#-Typen aus .net8?
 - [ ] Trainingsfunktionalität hinzufügen
+- [ ] OpenSimulator Implementierung
